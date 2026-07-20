@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Pirata Ranch | La mejor comida cubana de Miami</title>
+<meta name="robots" content="noindex, nofollow"><!-- DEMO: quitar cuando el dueño apruebe y el sitio sea oficial -->
+<meta name="description" content="Comida cubana auténtica al aire libre en Miami: pescado frito entero, cerdo asado en leña, música en vivo y eventos. Dos ubicaciones. Llama y reserva.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Pirata Ranch | La mejor comida cubana de Miami">
+<meta property="og:description" content="Comida cubana auténtica, música en vivo y eventos. Bodas, bautizos y más. Dos ubicaciones en Miami.">
+<meta property="og:image" content="https://elpirataranch.com/img/foto1.jpg">
+<link rel="icon" type="image/jpeg" href="/img/logo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "El Pirata Ranch",
+  "url": "https://elpirataranch.com/",
+  "image": "https://elpirataranch.com/img/foto1.jpg",
+  "servesCuisine": "Cubana",
+  "priceRange": "$10-25",
+  "telephone": "+17865664587",
+  "address": { "@type": "PostalAddress", "streetAddress": "15901 SW 200th St", "addressLocality": "Miami", "addressRegion": "FL", "postalCode": "33187", "addressCountry": "US" },
+  "sameAs": ["https://www.instagram.com/elpirata_cubanfood/", "https://www.yelp.com/biz/el-pirata-ranch-miami"]
+}
+</script>
+<style>
+:root{
+  --rojo:#c1121f; --rojo-osc:#8f0e17; --oro:#f5b41d; --negro:#131010;
+  --carbon:#1e1a18; --crema:#f6efe4; --mut:#c9bba8;
+  --serif:Georgia,'Times New Roman',serif;
+  --sans:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--negro);color:var(--crema);font-family:var(--sans);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--oro)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(19,16,16,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--rojo)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--crema);font-weight:800;letter-spacing:.04em}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--oro)}
+.nav a.call{background:var(--rojo);color:#fff;text-decoration:none;font-weight:800;padding:.55rem 1.1rem;border-radius:8px;white-space:nowrap}
+.nav a.call:hover{background:var(--rojo-osc)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;text-align:center;padding:56px 0 64px;
+  background:radial-gradient(ellipse at 50% -20%,rgba(193,18,31,.35),transparent 60%),
+             linear-gradient(180deg,#241d1a,var(--negro))}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle,rgba(245,180,29,.55) 1.6px,transparent 2px);
+  background-size:90px 46px;opacity:.28;mask-image:linear-gradient(180deg,#000,transparent 55%)}
+.hero img.logo{width:min(320px,70vw);margin:0 auto 6px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6))}
+.hero h1{font-family:var(--serif);font-size:clamp(1.9rem,5.4vw,3.3rem);line-height:1.15;color:#fff}
+.hero h1 em{font-style:normal;color:var(--oro)}
+.hero p.lede{max-width:56ch;margin:1rem auto 0;color:var(--mut);font-size:1.06rem}
+.cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.8rem}
+.btn{display:inline-block;padding:.9rem 1.6rem;border-radius:10px;font-weight:800;text-decoration:none;letter-spacing:.02em}
+.btn-rojo{background:var(--rojo);color:#fff}.btn-rojo:hover{background:var(--rojo-osc)}
+.btn-borde{border:2px solid var(--oro);color:var(--oro)}.btn-borde:hover{background:rgba(245,180,29,.12)}
+.badges{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;margin-top:2.2rem;font-size:.86rem;color:var(--mut);text-transform:uppercase;letter-spacing:.14em}
+.badges b{color:var(--oro)}
+
+section{padding:64px 0}
+h2{font-family:var(--serif);font-size:clamp(1.5rem,3.6vw,2.2rem);color:#fff;margin-bottom:.4rem}
+.sub{color:var(--rojo);font-weight:800;text-transform:uppercase;letter-spacing:.18em;font-size:.78rem}
+.intro{color:var(--mut);max-width:60ch;margin-top:.6rem}
+
+/* especialidades */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.plato{background:var(--carbon);border:1px solid #372c26;border-radius:14px;overflow:hidden}
+.plato img{height:230px;width:100%;object-fit:cover}
+.plato .cap{padding:14px 16px}
+.plato .cap b{color:#fff}
+.plato .cap span{display:block;color:var(--mut);font-size:.92rem}
+
+/* menu */
+.menu-box{background:var(--carbon);border:1px solid #372c26;border-radius:16px;padding:clamp(20px,4vw,36px);margin-top:28px}
+.menu-item{display:flex;align-items:baseline;gap:10px;padding:.7rem 0;border-bottom:1px dashed #3d332c}
+.menu-item:last-of-type{border-bottom:0}
+.menu-item b{color:#fff}
+.menu-item .dots{flex:1;border-bottom:2px dotted #4a3e35;transform:translateY(-4px)}
+.menu-item .precio{color:var(--oro);font-weight:800;white-space:nowrap}
+.menu-item small{display:block;color:var(--mut)}
+.nota-menu{margin-top:1.2rem;color:var(--mut);font-size:.92rem}
+.delivery{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+.delivery a{border:1px solid #4a3e35;border-radius:8px;padding:.5rem 1rem;text-decoration:none;color:var(--crema);font-weight:700;font-size:.92rem}
+.delivery a:hover{border-color:var(--oro)}
+
+/* eventos */
+.eventos{background:linear-gradient(180deg,#2a1214,#1c0d0f);border-top:2px solid var(--rojo);border-bottom:2px solid var(--rojo)}
+.ev-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,48px);align-items:center}
+.ev-lista{list-style:none;margin-top:1rem}
+.ev-lista li{padding:.5rem 0 .5rem 1.8rem;position:relative;color:var(--crema)}
+.ev-lista li::before{content:"★";position:absolute;left:0;color:var(--oro)}
+.ev-foto{border-radius:14px;overflow:hidden;border:1px solid #513}
+
+/* ubicaciones */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.loc{background:var(--carbon);border:1px solid #372c26;border-radius:14px;padding:24px}
+.loc h3{color:#fff;font-family:var(--serif);font-size:1.25rem}
+.loc .tag{display:inline-block;background:rgba(193,18,31,.18);color:#ff8d96;border:1px solid rgba(193,18,31,.5);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:6px;margin-bottom:.8rem}
+.loc p{color:var(--mut);margin:.3rem 0}
+.loc a.dir{display:inline-block;margin-top:.8rem;font-weight:700}
+
+footer{border-top:1px solid #372c26;padding:36px 0;color:var(--mut);font-size:.9rem}
+.f-row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+footer a{color:var(--mut)}
+footer .idx{font-size:.78rem;opacity:.75}
+
+@media(max-width:840px){
+  .grid3{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+  .ev-grid{grid-template-columns:1fr}
+  .plato img{height:200px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><img src="img/logo.jpg" alt="El Pirata Ranch"><span>EL PIRATA RANCH</span></a>
+    <a class="call" href="tel:+17865664587">☎ 786-566-4587</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <img class="logo" src="img/logo-grande.jpg" alt="El Pirata Ranch #1">
+    <h1>La mejor comida cubana <em>de Miami</em>, al aire libre.</h1>
+    <p class="lede">Pescado frito entero, cerdo asado en leña y el sabor de casa, con música en vivo bajo las luces del ranch. Ven con la familia; aquí los niños también tienen su fiesta.</p>
+    <div class="cta">
+      <a class="btn btn-rojo" href="tel:+17865664587">Reservar por teléfono</a>
+      <a class="btn btn-borde" href="#ubicaciones">Cómo llegar</a>
+    </div>
+    <div class="badges">
+      <span><b>★ 4.9</b> de reseñas</span>
+      <span><b>♫</b> Música en vivo</span>
+      <span><b>2</b> ubicaciones</span>
+      <span><b>$10-25</b> por plato</span>
+    </div>
+  </div>
+</section>
+
+<section id="especialidades">
+  <div class="wrap">
+    <span class="sub">Lo que nos hace famosos</span>
+    <h2>Del carbón y la leña, directo a tu mesa.</h2>
+    <p class="intro">Cocina cubana de verdad, como se hace en el campo: fuego lento, leña y carbón. Estas son las especialidades que la gente cruza Miami para comer.</p>
+    <div class="grid3">
+      <figure class="plato">
+        <img src="img/foto1.jpg" alt="Pescado frito entero con tostones y moros">
+        <figcaption class="cap"><b>Pescado frito entero</b><span>Con tostones, moros y limón. El plato de la casa.</span></figcaption>
+      </figure>
+      <figure class="plato">
+        <img src="img/foto2.jpg" alt="Pollo a la plancha con vegetales y aguacate">
+        <figcaption class="cap"><b>Directo de la parrilla</b><span>Con vegetales frescos y aguacate, servido en madera.</span></figcaption>
+      </figure>
+      <figure class="plato">
+        <img src="img/foto5.jpg" alt="Bistec con cebolla, tomate y ensalada">
+        <figcaption class="cap"><b>Sazón criolla</b><span>Cebolla, tomate y el sabor de la cocina de casa.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="sub">El menú</span>
+    <h2>Cada día tiene su sazón.</h2>
+    <p class="intro">Nuestro menú cambia según el día, como en casa. Una muestra de lo que sale de la cocina:</p>
+    <div class="menu-box">
+      <div class="menu-item"><div><b>Ropa Vieja</b><small>Res deshebrada en salsa criolla con cebolla y pimientos</small></div><span class="dots"></span><span class="precio">$18</span></div>
+      <div class="menu-item"><div><b>Enchilado de Mariscos</b><small>Mariscos en salsa roja criolla con ajo y pimientos</small></div><span class="dots"></span><span class="precio">$24.99</span></div>
+      <div class="menu-item"><div><b>Costillas de Cerdo al Carbón</b><small>Asadas a la parrilla con especias de la casa</small></div><span class="dots"></span><span class="precio">$18</span></div>
+      <div class="menu-item"><div><b>Cerdo Asado en Leña</b><small>Cocción lenta con cítricos, tierno y ahumado</small></div><span class="dots"></span><span class="precio">$17</span></div>
+      <div class="menu-item"><div><b>Suadero / Brisket</b><small>Cocción lenta, sazón latina</small></div><span class="dots"></span><span class="precio">$24.99</span></div>
+      <div class="menu-item"><div><b>Corte de Res a la Parrilla</b><small>Con arroz, frijoles y ensalada fresca</small></div><span class="dots"></span><span class="precio">$24.99</span></div>
+      <p class="nota-menu">+ Aperitivos, postres caseros y jugos naturales. Pregunta por el menú del día al llegar o por teléfono.</p>
+      <div class="delivery">
+        <a href="https://www.ubereats.com/store/el-pirata-ranch-1/P7ktA_r3SnSVxjOPhgqOSA" target="_blank" rel="noopener">Pedir por Uber Eats</a>
+        <a href="https://www.doordash.com/store/el-pirata-ranch-miami-42982189/" target="_blank" rel="noopener">Pedir por DoorDash</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="eventos" id="eventos">
+  <div class="wrap ev-grid">
+    <div>
+      <span class="sub" style="color:var(--oro)">Música en vivo y celebraciones</span>
+      <h2>Tu fiesta, con sabor a Cuba.</h2>
+      <p class="intro" style="color:#e8d9c4">El ranch es escenario: cantantes en vivo los fines de semana y espacio abierto para celebrar lo que quieras celebrar.</p>
+      <ul class="ev-lista">
+        <li>Bodas y aniversarios</li>
+        <li>Bautizos y cumpleaños</li>
+        <li>Eventos de empresa y grupos grandes</li>
+        <li>Música en vivo cada fin de semana</li>
+      </ul>
+      <div class="cta" style="justify-content:flex-start;margin-top:1.4rem">
+        <a class="btn btn-rojo" href="tel:+17865664587">Cotiza tu evento</a>
+      </div>
+    </div>
+    <div class="ev-foto"><img src="img/foto3.jpg" alt="El Pirata Ranch: música en vivo, bodas, bautizos y más"></div>
+  </div>
+</section>
+
+<section id="ubicaciones">
+  <div class="wrap">
+    <span class="sub">Encuéntranos</span>
+    <h2>Dos ranchos, el mismo sabor.</h2>
+    <div class="grid2">
+      <div class="loc">
+        <span class="tag">Ranch #1</span>
+        <h3>El Pirata Ranch #1</h3>
+        <p>19511 SW 168th St, Miami, FL 33187</p>
+        <p>☎ <a href="tel:+17866224291">786-622-4291</a></p>
+        <p>Lun-Jue 6 AM-8 PM · Vie-Dom 6 AM-11 PM</p>
+        <a class="dir" href="https://maps.google.com/?q=19511+SW+168th+St,+Miami,+FL+33187" target="_blank" rel="noopener">Abrir en el mapa →</a>
+      </div>
+      <div class="loc">
+        <span class="tag">Ranch</span>
+        <h3>El Pirata Ranch</h3>
+        <p>15901 SW 200th St, Miami, FL 33187</p>
+        <p>☎ <a href="tel:+17865664587">786-566-4587</a></p>
+        <p>Consulta horarios por teléfono</p>
+        <a class="dir" href="https://maps.google.com/?q=15901+SW+200th+St,+Miami,+FL+33187" target="_blank" rel="noopener">Abrir en el mapa →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap f-row">
+    <span>© 2026 El Pirata Ranch · elpirataranch.com</span>
+    <span><a href="https://www.instagram.com/elpirata_cubanfood/" target="_blank" rel="noopener">Instagram @elpirata_cubanfood</a></span>
+    <span class="idx">Sitio por <a href="https://index01.net" target="_blank" rel="noopener">Index01</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
