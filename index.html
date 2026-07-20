@@ -14,15 +14,34 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "name": "El Pirata Ranch",
-  "url": "https://elpirataranch.com/",
-  "image": "https://elpirataranch.com/img/foto1.jpg",
-  "servesCuisine": "Cubana",
-  "priceRange": "$10-25",
-  "telephone": "+17865664587",
-  "address": { "@type": "PostalAddress", "streetAddress": "15901 SW 200th St", "addressLocality": "Miami", "addressRegion": "FL", "postalCode": "33187", "addressCountry": "US" },
-  "sameAs": ["https://www.instagram.com/elpirata_cubanfood/", "https://www.yelp.com/biz/el-pirata-ranch-miami"]
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://elpirataranch.com/#ranchon",
+      "name": "El Pirata Ranch (El Ranchón)",
+      "description": "Restaurante cubano al aire libre con música en vivo y eventos: bodas, bautizos y celebraciones.",
+      "url": "https://elpirataranch.com/",
+      "image": "https://elpirataranch.com/img/foto1.jpg",
+      "servesCuisine": "Cubana",
+      "priceRange": "$10-25",
+      "telephone": "+17865664587",
+      "address": { "@type": "PostalAddress", "streetAddress": "15901 SW 200th St", "addressLocality": "Miami", "addressRegion": "FL", "postalCode": "33187", "addressCountry": "US" },
+      "sameAs": ["https://www.instagram.com/elpirata_cubanfood/", "https://www.yelp.com/biz/el-pirata-ranch-miami"]
+    },
+    {
+      "@type": "FoodEstablishment",
+      "@id": "https://elpirataranch.com/#foodtruck",
+      "name": "El Pirata (Food Truck)",
+      "description": "Food truck fijo de comida cubana: desayuno desde las 6 AM, almuerzo para llevar y delivery.",
+      "url": "https://elpirataranch.com/#ubicaciones",
+      "servesCuisine": "Cubana",
+      "priceRange": "$10-25",
+      "telephone": "+17866224291",
+      "address": { "@type": "PostalAddress", "streetAddress": "19511 SW 168th St", "addressLocality": "Miami", "addressRegion": "FL", "postalCode": "33187", "addressCountry": "US" },
+      "openingHours": ["Mo-Th 06:00-20:00", "Fr-Su 06:00-23:00"],
+      "parentOrganization": { "@id": "https://elpirataranch.com/#ranchon" }
+    }
+  ]
 }
 </script>
 <style>
@@ -98,13 +117,27 @@ h2{font-family:var(--serif);font-size:clamp(1.5rem,3.6vw,2.2rem);color:#fff;marg
 .ev-lista li::before{content:"★";position:absolute;left:0;color:var(--oro)}
 .ev-foto{border-radius:14px;overflow:hidden;border:1px solid #513}
 
-/* ubicaciones */
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
-.loc{background:var(--carbon);border:1px solid #372c26;border-radius:14px;padding:24px}
-.loc h3{color:#fff;font-family:var(--serif);font-size:1.25rem}
-.loc .tag{display:inline-block;background:rgba(193,18,31,.18);color:#ff8d96;border:1px solid rgba(193,18,31,.5);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:6px;margin-bottom:.8rem}
+/* ubicaciones: dos espiritus */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.loc{border-radius:16px;padding:28px;position:relative;overflow:hidden}
+.loc h3{color:#fff;font-family:var(--serif);font-size:1.45rem;margin-top:.2rem}
+.loc .tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:.28rem .7rem;border-radius:6px;margin-bottom:.8rem}
 .loc p{color:var(--mut);margin:.3rem 0}
-.loc a.dir{display:inline-block;margin-top:.8rem;font-weight:700}
+.loc .espiritu{color:var(--crema);margin:.6rem 0 1rem;font-size:.98rem}
+.loc a.dir{display:inline-block;margin-top:.9rem;font-weight:700}
+.loc .acciones{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+.loc .acciones a{border-radius:8px;padding:.5rem 1rem;text-decoration:none;font-weight:700;font-size:.9rem}
+/* el ranchon: calido, dorado, para quedarse */
+.loc.ranchon{background:linear-gradient(160deg,#2e1512,#1c0f0d);border:1px solid rgba(245,180,29,.4)}
+.loc.ranchon::before{content:"♫";position:absolute;right:18px;top:10px;font-size:3.2rem;color:rgba(245,180,29,.14)}
+.loc.ranchon .tag{background:rgba(245,180,29,.14);color:var(--oro);border:1px solid rgba(245,180,29,.5)}
+.loc.ranchon .acciones a{background:var(--rojo);color:#fff}
+/* el food truck: acero, directo, al paso */
+.loc.truck{background:linear-gradient(160deg,#20201f,#151413);border:1px solid #4a4a48}
+.loc.truck::before{content:"➤";position:absolute;right:18px;top:14px;font-size:2.6rem;color:rgba(255,255,255,.10)}
+.loc.truck .tag{background:rgba(255,255,255,.08);color:#d8d8d4;border:1px solid #5a5a57}
+.loc.truck .acciones a{border:1px solid #5a5a57;color:var(--crema)}
+.loc.truck .acciones a:hover{border-color:var(--oro);color:var(--oro)}
 
 footer{border-top:1px solid #372c26;padding:36px 0;color:var(--mut);font-size:.9rem}
 .f-row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
@@ -140,7 +173,7 @@ footer .idx{font-size:.78rem;opacity:.75}
     <div class="badges">
       <span><b>★ 4.9</b> de reseñas</span>
       <span><b>♫</b> Música en vivo</span>
-      <span><b>2</b> ubicaciones</span>
+      <span><b>Ranchón</b> + food truck</span>
       <span><b>$10-25</b> por plato</span>
     </div>
   </div>
@@ -192,7 +225,7 @@ footer .idx{font-size:.78rem;opacity:.75}
 <section class="eventos" id="eventos">
   <div class="wrap ev-grid">
     <div>
-      <span class="sub" style="color:var(--oro)">Música en vivo y celebraciones</span>
+      <span class="sub" style="color:var(--oro)">En el ranchón · Música en vivo y celebraciones</span>
       <h2>Tu fiesta, con sabor a Cuba.</h2>
       <p class="intro" style="color:#e8d9c4">El ranch es escenario: cantantes en vivo los fines de semana y espacio abierto para celebrar lo que quieras celebrar.</p>
       <ul class="ev-lista">
@@ -212,23 +245,32 @@ footer .idx{font-size:.78rem;opacity:.75}
 <section id="ubicaciones">
   <div class="wrap">
     <span class="sub">Encuéntranos</span>
-    <h2>Dos ranchos, el mismo sabor.</h2>
+    <h2>Dos espíritus, el mismo pirata.</h2>
+    <p class="intro">No son dos direcciones y punto: el ranchón es para quedarse y celebrar; el food truck es el sabor de siempre, al paso y más cerca. Tú eliges el plan.</p>
     <div class="grid2">
-      <div class="loc">
-        <span class="tag">Ranch #1</span>
-        <h3>El Pirata Ranch #1</h3>
-        <p>19511 SW 168th St, Miami, FL 33187</p>
+      <div class="loc ranchon">
+        <span class="tag">El Ranchón · Para quedarse</span>
+        <h3>El Pirata Ranch</h3>
+        <p class="espiritu">Espacio abierto bajo las luces, música en vivo y mesa larga. Aquí se viene a celebrar: bodas, bautizos, cumpleaños o un domingo en familia sin apuro.</p>
+        <p>📍 15901 SW 200th St, Miami, FL 33187</p>
+        <p>☎ <a href="tel:+17865664587">786-566-4587</a></p>
+        <div class="acciones">
+          <a href="tel:+17865664587">Reserva o cotiza tu evento</a>
+        </div>
+        <a class="dir" href="https://maps.google.com/?q=15901+SW+200th+St,+Miami,+FL+33187" target="_blank" rel="noopener">Abrir en el mapa →</a>
+      </div>
+      <div class="loc truck">
+        <span class="tag">El Food Truck · Al paso</span>
+        <h3>El Pirata</h3>
+        <p class="espiritu">El mismo sabor, directo y sin vueltas: desayuno desde las 6 AM, almuerzo para llevar y delivery. Fijo en plena zona de paso, más cerca de tu ruta de cada día.</p>
+        <p>📍 19511 SW 168th St, Miami, FL 33187</p>
         <p>☎ <a href="tel:+17866224291">786-622-4291</a></p>
         <p>Lun-Jue 6 AM-8 PM · Vie-Dom 6 AM-11 PM</p>
+        <div class="acciones">
+          <a href="https://www.ubereats.com/store/el-pirata-ranch-1/P7ktA_r3SnSVxjOPhgqOSA" target="_blank" rel="noopener">Uber Eats</a>
+          <a href="https://www.doordash.com/store/el-pirata-ranch-miami-42982189/" target="_blank" rel="noopener">DoorDash</a>
+        </div>
         <a class="dir" href="https://maps.google.com/?q=19511+SW+168th+St,+Miami,+FL+33187" target="_blank" rel="noopener">Abrir en el mapa →</a>
-      </div>
-      <div class="loc">
-        <span class="tag">Ranch</span>
-        <h3>El Pirata Ranch</h3>
-        <p>15901 SW 200th St, Miami, FL 33187</p>
-        <p>☎ <a href="tel:+17865664587">786-566-4587</a></p>
-        <p>Consulta horarios por teléfono</p>
-        <a class="dir" href="https://maps.google.com/?q=15901+SW+200th+St,+Miami,+FL+33187" target="_blank" rel="noopener">Abrir en el mapa →</a>
       </div>
     </div>
   </div>
