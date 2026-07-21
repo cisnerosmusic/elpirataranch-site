@@ -1,26 +1,39 @@
 # El Pirata Ranch — sitio web
 
-Sitio de **El Pirata Ranch**, restaurante de comida cubana al aire libre en Miami: pescado frito entero, cerdo asado en leña, música en vivo y eventos. Dos ubicaciones (SW 200th St y SW 168th St).
+Sitio de **El Pirata Ranch**, restaurante de comida cubana al aire libre en Miami: picaderas, pescado frito entero, cerdo asado en leña, música en vivo y eventos. Una marca con dos locales:
 
-- **Estado:** DEMO de propuesta, pendiente de aprobación del dueño. La página lleva `noindex, nofollow` a propósito; se retira cuando el sitio sea oficial.
+- **Ranch #1** — 15901 SW 200th St, Miami, FL 33187 · 786-566-4587 · página `/ranch-1/`
+- **Richmond Dr** — 19511 SW 168th St, Miami, FL 33187 · 786-622-4291 · página `/richmond/`
+
+("Richmond Dr" es el nombre público provisional del local que el dueño llama internamente #0; se ajustará cuando confirme cómo le llama la gente.)
+
+- **Estado:** sitio oficial v1, indexable. Sin menú de precios ni pedidos online todavía (Fase 2: integración Clover; Fase 3: delivery propio con SMS).
 - **Ver en vivo:** https://cisnerosmusic.github.io/elpirataranch-site/
-- **Dominio destino:** elpirataranch.com (registrado, DNS pendiente de configurar).
+- **Dominio:** elpirataranch.com (GoDaddy; CNAME incluido en el repo, DNS apuntando a GitHub Pages).
 
 ## Qué es
 
-Una sola página HTML estática, sin frameworks ni dependencias: identidad de marca (rojo pirata, negro, dorado), especialidades, menú de muestra con precios reales, sección de eventos (bodas, bautizos, música en vivo), las dos ubicaciones con mapa y teléfono, y datos estructurados `Restaurant` de schema.org para buscadores y asistentes de IA.
+HTML y CSS estáticos, sin frameworks ni dependencias: una página de marca + una página por local, cada una con su schema.org `Restaurant` propio (base del SEO local: cada ficha de Google Business apuntará a su página). Identidad rojo pirata, negro y dorado, con el logo vectorial oficial recompuesto (RANCH centrado, sin "#1") y fotografía profesional entregada por el dueño.
 
-## Origen de los materiales
+## Estructura
 
-Todo lo que se muestra proviene de lo que el negocio ya tiene publicado: logo y fotos de su Instagram ([@elpirata_cubanfood](https://www.instagram.com/elpirata_cubanfood/)), menú y precios de su ficha de DoorDash, datos de contacto de sus fichas públicas. Al aprobarse el proyecto se sustituyen por materiales originales entregados por el dueño (logo en alta resolución, fotos propias, menú completo confirmado).
+```
+index.html          marca: hero, especialidades, eventos, los dos locales
+ranch-1/index.html  local SW 200th St: eventos, música en vivo, ficha
+richmond/index.html local SW 168th St: desayuno 6 AM, para llevar, ficha
+styles.css          estilos compartidos
+img/                fotos optimizadas (~200 KB) y logo de marca
+CNAME, robots.txt, sitemap.xml
+```
 
-## Pendientes al aprobarse
+## Pendientes
 
-- Retirar `noindex` y apuntar elpirataranch.com al sitio.
-- Logo original y fotografías en alta resolución.
-- Confirmar teléfonos y horarios por local, y el menú completo con sus rotaciones por día.
-- Reclamar y unificar las fichas de Google Business, Yelp y directorios.
-- Versión en inglés, sitemap y llms.txt.
+- Menú con precios reales confirmados por el dueño (y rotación por día).
+- Horarios del Ranch #1 confirmados (mientras tanto la página dice "llámanos").
+- Nombre público definitivo del local de Richmond Dr.
+- Versión en inglés y llms.txt.
+- Fase 2: pedidos online con Clover · Fase 3: delivery propio + SMS (ver SPEC en carpeta local de trabajo).
+- Reclamar y unificar Google Business, Yelp y las páginas de Facebook.
 
 ---
 
