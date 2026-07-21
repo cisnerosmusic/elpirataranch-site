@@ -5,7 +5,7 @@ Web, diseño, SEO y AEO: Index01 (https://index01.net), Miami
 
 /* AGRADECIMIENTOS / THANKS */
 A la gente que cruza Miami por un pescado frito entero.
-A los que llegan a las 6 AM por su cafecito y se quedan al almuerzo.
+A los que llegan temprano por su cafecito y se quedan al almuerzo.
 
 /* SITIO / SITE */
 Última actualización: 2026-07-20
