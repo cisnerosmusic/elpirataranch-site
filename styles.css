@@ -95,6 +95,9 @@ footer{border-top:1px solid #372c26;padding:36px 0;color:var(--mut);font-size:.9
 .f-row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
 footer a{color:var(--mut)}
 footer .idx{font-size:.78rem;opacity:.75}
+a.ig{display:inline-flex;align-items:center;color:var(--mut)}
+a.ig:hover{color:var(--oro)}
+a.ig svg{display:block;width:22px;height:22px}
 
 @media(max-width:840px){
   .grid3{grid-template-columns:1fr}
