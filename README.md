@@ -56,6 +56,7 @@ CNAME                 elpirataranch.com (dominio custom de GitHub Pages)
 - [ ] Favicon "pro" diseñado (el actual es funcional, fase 1 OK).
 - [ ] Los 10 puntos de Accesibilidad (90→100): revisar contrastes señalados por Lighthouse.
 - [ ] Datos del dueño: horarios reales del Ranch #1, nombre público definitivo del local de Richmond Dr, carácter de cada local, dónde se hace la pizza cubana (plato firma según reseñas, aún sin foto ni mención).
+- [ ] Preguntas nuevas tras descubrir el TikTok (@el.pirata.miami, 2.7k seguidores, su canal más activo, ya enlazado en footer/schema/llms.txt): ¿qué es "El Pirata Ranch 3" que se ve en los letreros de los videos? ¿tercer local o nombre del ranchón? Y la bio de TikTok da OTRO horario distinto (Lun-Dom 6am-8pm): tercera versión, urge zanjar con el dueño.
 - [ ] Foto limpia del pescado frito entero (el plato de la casa perdió su tarjeta por tener solo foto con logo viejo).
 - [ ] Versión en inglés + hreflang.
 - [ ] Bing Webmaster Tools (importar desde Search Console).
