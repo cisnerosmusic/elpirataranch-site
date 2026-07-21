@@ -35,7 +35,9 @@ CNAME                 elpirataranch.com (dominio custom de GitHub Pages)
 ### Identidad
 
 - Logo vectorial oficial recompuesto: "RANCH" centrado bajo "EL PIRATA", sin el "#1" (cirugía del content stream del PDF de Illustrator; fuentes en la carpeta local de trabajo, `logo-elpirata-ranch.pdf/png`).
-- Favicon fase 1: medallón (calavera + aro dorado sobre negro), extraído del vectorial. **Pendiente: versión pro diseñada.**
+- Favicon (versión pro, 21 jul 2026): medallón rehecho desde el logo de marca, calavera más grande y aro dorado más grueso, legible a 16 px. Set completo 16/32/48/192/512 + `.ico` multitalla + `apple-touch-icon`.
+- Tarjetas OG 1200x630 por página (home, Ranch #1, Richmond Dr): foto real del plato con degradado, logo, título serif, subrayado oro, dirección y barra roja. Al compartir cualquier URL sale la marca completa.
+- **Documento rector de marca (PDF, 10 págs.):** copia de consulta en [`docs/documento-rector-de-marca.pdf`](docs/documento-rector-de-marca.pdf). El kit fuente (manual, logos, paleta, favicon, tarjetas y generadores) vive en la carpeta local “El Pirata Ranch Identidad de marca”, administrado por Index01 como parte del mantenimiento.
 - Fotos profesionales del dueño (6000px originales, optimizadas a 1600px/~200 KB). En secciones principales solo las fotos SIN el logo antiguo estampado (ese logo dice "EL PIRATA" sin "RANCH").
 
 ### SEO / AEO aplicado
