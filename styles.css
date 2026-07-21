@@ -44,11 +44,6 @@ h2{font-family:var(--serif);font-size:clamp(1.5rem,3.6vw,2.2rem);color:#fff;marg
 .plato .cap b{color:#fff}
 .plato .cap span{display:block;color:var(--mut);font-size:.92rem}
 
-/* delivery */
-.delivery{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
-.delivery a{border:1px solid #4a3e35;border-radius:8px;padding:.5rem 1rem;text-decoration:none;color:var(--crema);font-weight:700;font-size:.92rem}
-.delivery a:hover{border-color:var(--oro)}
-
 /* eventos */
 .eventos{background:linear-gradient(180deg,#2a1214,#1c0d0f);border-top:2px solid var(--rojo);border-bottom:2px solid var(--rojo)}
 .ev-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,48px);align-items:center}
