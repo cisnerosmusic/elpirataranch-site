@@ -1,0 +1,14 @@
+/* EQUIPO / TEAM */
+Negocio: El Pirata Ranch, restaurante cubano al aire libre, Miami, FL
+Cocina: la familia pirata, en leña y carbón, como en el campo cubano
+Web, diseño, SEO y AEO: Index01 (https://index01.net), Miami
+
+/* AGRADECIMIENTOS / THANKS */
+A la gente que cruza Miami por un pescado frito entero.
+A los que llegan a las 6 AM por su cafecito y se quedan al almuerzo.
+
+/* SITIO / SITE */
+Última actualización: 2026-07-20
+Idioma: español (English coming soon)
+Tecnología: HTML y CSS a mano. Sin frameworks, sin plugins, sin peso muerto.
+Filosofía: rápido, ligero y honesto, como una mesa larga bajo las luces.
