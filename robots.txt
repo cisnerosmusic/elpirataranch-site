@@ -1,4 +1,4 @@
-# El Pirata Ranch — todos bienvenidos, buscadores y asistentes de IA.
+# El Pirata Ranch: todos bienvenidos, buscadores y asistentes de IA.
 # Datos para LLMs: https://elpirataranch.com/llms.txt
 
 User-agent: *
