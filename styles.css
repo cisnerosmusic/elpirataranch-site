@@ -17,6 +17,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.92);backdrop-filt
 .brand img{width:64px;height:auto}
 .nav a.call{background:var(--rojo);color:#fff;text-decoration:none;font-weight:800;padding:.55rem 1.1rem;border-radius:8px;white-space:nowrap}
 .nav a.call:hover{background:var(--rojo-osc)}
+.nav-right{display:flex;gap:10px;align-items:center}
+a.lang{color:var(--mut);text-decoration:none;font-weight:800;font-size:.82rem;letter-spacing:.08em;padding:.45rem .7rem;border:1px solid #4a3e35;border-radius:8px;white-space:nowrap}
+a.lang:hover{color:var(--oro);border-color:var(--oro)}
 
 /* hero */
 .hero{position:relative;overflow:hidden;text-align:center;padding:56px 0 64px;background:#000}

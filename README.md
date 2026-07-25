@@ -21,16 +21,26 @@ HTML y CSS estáticos a mano, sin frameworks ni dependencias (filosofía Index01
 ```
 index.html            marca: hero, especialidades, eventos, FAQ, los dos locales
 ranch-1/index.html    local SW 200th St: eventos, música en vivo, ficha + breadcrumb
-richmond/index.html   local SW 168th St: desayuno 6 AM, horarios, ficha + breadcrumb
-styles.css            estilos compartidos
-img/                  fotos optimizadas (~200 KB), logo de marca, favicons
+richmond/index.html   local SW 168th St: desayuno, horarios, ficha + breadcrumb
+en/                   versión en inglés (espejo reescrito: /en/, /en/ranch-1/, /en/richmond/)
+styles.css            estilos compartidos (incluye selector de idioma .lang)
+img/                  fotos optimizadas (~200 KB), logo de marca, favicons, tarjetas OG
 favicon.ico           medallón pirata multitamaño (raíz)
-llms.txt              ficha del negocio para asistentes de IA (AEO)
+llms.txt              ficha del negocio para asistentes de IA (AEO), bilingüe
 humans.txt            créditos
 robots.txt            allow universal + bienvenida explícita a crawlers de IA
-sitemap.xml           3 URLs con lastmod
+sitemap.xml           6 URLs (ES+EN) con lastmod y alternates hreflang
 CNAME                 elpirataranch.com (dominio custom de GitHub Pages)
+404.html              página de error con marca
+docs/                 documento rector de marca (PDF)
 ```
+
+### Bilingüe ES/EN (21 jul 2026)
+
+- `/en/` es reescritura para su público (anglo de Miami, turistas, campers del Thousand Trails junto al Ranch #1), no traducción literal.
+- `hreflang` es/en/x-default en las 6 páginas (x-default → español, el idioma del negocio); selector ES↔EN en el header de todas.
+- Schema EN reutiliza los mismos `@id` de entidad (una sola entidad por local ante Google); FAQPage propio en inglés (`/en/#faq`, `inLanguage: en`).
+- Sitemap con los 6 URLs y alternates `xhtml:link`.
 
 ### Identidad
 
@@ -60,7 +70,7 @@ CNAME                 elpirataranch.com (dominio custom de GitHub Pages)
 - [ ] Datos del dueño: nombre público definitivo del local de Richmond Dr y carácter de cada local. (Horarios: RESUELTO vía Google Business. Pizza cubana: RESUELTO, se hace en ambos locales, ya en web/FAQ/schema/llms.txt — falta su foto. "Ranch 3" del letrero de TikTok: probable error, descartado como tercer local.)
 - [ ] Accesos a redes (Facebook x2-3, Google Business, Instagram, TikTok): el dueño no tiene claro quién los administra ni las contraseñas; Ernesto lo irá limpiando con el tiempo. El email elpirataranch@gmail.com sigue en cuarentena.
 - [ ] Foto limpia del pescado frito entero (el plato de la casa perdió su tarjeta por tener solo foto con logo viejo).
-- [ ] Versión en inglés + hreflang.
+- [x] Versión en inglés + hreflang — HECHO 21 jul 2026 (ver sección Bilingüe). Tras el deploy: reenviar sitemap en Search Console y solicitar indexación de las 3 URLs /en/.
 - [ ] Bing Webmaster Tools (importar desde Search Console).
 - [ ] Instagram: poner elpirataranch.com en la bio de @elpirata_cubanfood (primer backlink, lo hace el dueño en 30 segundos).
 - [ ] Reclamar y unificar fichas: Google Business x2 (cada una apuntando a su página), Yelp x2, consolidar las 2-3 páginas de Facebook. Evidencia del desorden: el horario de Facebook lleva ~1 año diciendo Lun-Vie 6:00-7:00 AM (una hora al día; claramente AM por PM) y Sáb-Dom hasta 11:45 PM, y la página "El Pirata Ranch" (id 61574959894337, 35 seguidores) tiene el precio en euros y la dirección del local pequeño. Corregirlo al reclamar. La web es la única fuente con datos completos y correctos. **Email hallado ahí: elpirataranch@gmail.com — ⚠️ NO usar: posiblemente perdieron la contraseña; pendiente de confirmar con el dueño.** Se autodescriben como "rincón familiar en Homestead" (término añadido al SEO).

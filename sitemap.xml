@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://elpirataranch.com/</loc><lastmod>2026-07-20</lastmod></url>
-  <url><loc>https://elpirataranch.com/ranch-1/</loc><lastmod>2026-07-20</lastmod></url>
-  <url><loc>https://elpirataranch.com/richmond/</loc><lastmod>2026-07-20</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://elpirataranch.com/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elpirataranch.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elpirataranch.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elpirataranch.com/"/>
+  </url>
+  <url>
+    <loc>https://elpirataranch.com/en/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elpirataranch.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elpirataranch.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elpirataranch.com/"/>
+  </url>
+  <url>
+    <loc>https://elpirataranch.com/ranch-1/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elpirataranch.com/ranch-1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elpirataranch.com/en/ranch-1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elpirataranch.com/ranch-1/"/>
+  </url>
+  <url>
+    <loc>https://elpirataranch.com/en/ranch-1/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elpirataranch.com/ranch-1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elpirataranch.com/en/ranch-1/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elpirataranch.com/ranch-1/"/>
+  </url>
+  <url>
+    <loc>https://elpirataranch.com/richmond/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elpirataranch.com/richmond/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elpirataranch.com/en/richmond/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elpirataranch.com/richmond/"/>
+  </url>
+  <url>
+    <loc>https://elpirataranch.com/en/richmond/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://elpirataranch.com/richmond/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elpirataranch.com/en/richmond/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://elpirataranch.com/richmond/"/>
+  </url>
 </urlset>
