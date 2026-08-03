@@ -5,13 +5,11 @@ Sitio oficial de **El Pirata Ranch**, restaurante de comida cubana al aire libre
 - **Ranch #1** — 15901 SW 200th St, Miami, FL 33187 · 786-566-4587 · [`/ranch-1/`](https://elpirataranch.com/ranch-1/)
 - **Richmond Dr** — 19511 SW 168th St, Miami, FL 33187 · 786-622-4291 · [`/richmond/`](https://elpirataranch.com/richmond/)
 
-("Richmond Dr" es nombre público provisional del local que el dueño llama internamente #0; se ajustará cuando confirme cómo le llama la gente.)
-
 ## Estado: EN PRODUCCIÓN (lanzado 20 jul 2026)
 
 - **https://elpirataranch.com** con HTTPS forzado; www y http redirigen al apex.
-- DNS en GoDaddy: 4 registros A de GitHub Pages + CNAME www → cisnerosmusic.github.io. Se conservaron MX/SPF/DMARC de GoDaddy para futuro correo del dominio.
-- **Google Search Console verificada**, sitemap enviado y aceptado (3 páginas), indexación solicitada a mano para las tres URLs.
+- DNS en GoDaddy: 4 registros A de GitHub Pages + CNAME www → cisnerosmusic.github.io.
+- **Google Search Console verificada**, sitemap enviado y aceptado, indexación solicitada a mano.
 - **PageSpeed: 100 Rendimiento (móvil y desktop) · 100 SEO · 100 Recomendaciones · 90 Accesibilidad · 3/3 navegación con agentes.**
 
 ## Qué es técnicamente
@@ -44,11 +42,11 @@ docs/                 documento rector de marca (PDF)
 
 ### Identidad
 
-- Logo vectorial oficial recompuesto: "RANCH" centrado bajo "EL PIRATA", sin el "#1" (cirugía del content stream del PDF de Illustrator; fuentes en la carpeta local de trabajo, `logo-elpirata-ranch.pdf/png`).
+- Logo vectorial oficial recompuesto: "RANCH" centrado bajo "EL PIRATA".
 - Favicon (versión pro, 21 jul 2026): medallón rehecho desde el logo de marca, calavera más grande y aro dorado más grueso, legible a 16 px. Set completo 16/32/48/192/512 + `.ico` multitalla + `apple-touch-icon`.
 - Tarjetas OG 1200x630 por página (home, Ranch #1, Richmond Dr): foto real del plato con degradado, logo, título serif, subrayado oro, dirección y barra roja. Al compartir cualquier URL sale la marca completa.
-- **Documento rector de marca (PDF, 10 págs.):** copia de consulta en [`docs/documento-rector-de-marca.pdf`](docs/documento-rector-de-marca.pdf). El kit fuente (manual, logos, paleta, favicon, tarjetas y generadores) vive en la carpeta local “El Pirata Ranch Identidad de marca”, administrado por Index01 como parte del mantenimiento.
-- Fotos profesionales del dueño (6000px originales, optimizadas a 1600px/~200 KB). En secciones principales solo las fotos SIN el logo antiguo estampado (ese logo dice "EL PIRATA" sin "RANCH").
+- **Documento rector de marca (PDF, 10 págs.):** copia de consulta en [`docs/documento-rector-de-marca.pdf`](docs/documento-rector-de-marca.pdf).
+- Fotografía profesional optimizada para web (originales 6000px → 1600px / ~200 KB), encuadres por regla de los tercios.
 
 ### SEO / AEO aplicado
 
@@ -58,42 +56,18 @@ docs/                 documento rector de marca (PDF)
 
 ## Decisiones editoriales vigentes
 
-- **Sin menú con precios**: el dueño no ha confirmado precios ni rotación por día. La web dice "el menú cambia según el día, pregunta por teléfono".
-- **Sin Uber Eats / DoorDash**: las cuentas existen pero las tablets están desconectadas. Sin botones ni menciones de delivery hasta que sea real.
-- **Horarios confirmados por las fichas de Google Business** (verificadas 20 jul 2026): Richmond Dr Lun-Jue 6-20, Vie-Dom 6-23 · Ranch #1 Lun-Mié 8-20, Jue-Dom 8-23. Precios GBP: Richmond $10-20, Ranch #1 $20-30. Ratings reales: 4.8★ (96) y 4.7★ (70) = 166 reseñas.
-- Teléfono como único canal de pedidos/reservas, reflejado en toda la web.
+- **Sin menú con precios**: el menú cambia según el día; la web invita a preguntar por teléfono.
+- **Teléfono como único canal de pedidos y reservas**, reflejado en toda la web.
+- Horarios publicados según las fichas oficiales de Google Business de cada local.
 
-## Pendientes de Fase 1 (afinado)
+## Afinado pendiente (Fase 1)
 
-- [ ] Favicon "pro" diseñado (el actual es funcional, fase 1 OK).
-- [ ] Los 10 puntos de Accesibilidad (90→100): revisar contrastes señalados por Lighthouse.
-- [ ] Datos del dueño: nombre público definitivo del local de Richmond Dr y carácter de cada local. (Horarios: RESUELTO vía Google Business. Pizza cubana: RESUELTO, se hace en ambos locales, ya en web/FAQ/schema/llms.txt — falta su foto. "Ranch 3" del letrero de TikTok: probable error, descartado como tercer local.)
-- [ ] Accesos a redes (Facebook x2-3, Google Business, Instagram, TikTok): el dueño no tiene claro quién los administra ni las contraseñas; Ernesto lo irá limpiando con el tiempo. El email elpirataranch@gmail.com sigue en cuarentena.
-- [ ] Foto limpia del pescado frito entero (el plato de la casa perdió su tarjeta por tener solo foto con logo viejo).
-- [x] Versión en inglés + hreflang — HECHO 21 jul 2026 (ver sección Bilingüe). Tras el deploy: reenviar sitemap en Search Console y solicitar indexación de las 3 URLs /en/.
+- [ ] Accesibilidad 90→100: revisar contrastes señalados por Lighthouse.
 - [ ] Bing Webmaster Tools (importar desde Search Console).
-- [ ] Instagram: poner elpirataranch.com en la bio de @elpirata_cubanfood (primer backlink, lo hace el dueño en 30 segundos).
-- [ ] Reclamar y unificar fichas: Google Business x2 (cada una apuntando a su página), Yelp x2, consolidar las 2-3 páginas de Facebook. Evidencia del desorden: el horario de Facebook lleva ~1 año diciendo Lun-Vie 6:00-7:00 AM (una hora al día; claramente AM por PM) y Sáb-Dom hasta 11:45 PM, y la página "El Pirata Ranch" (id 61574959894337, 35 seguidores) tiene el precio en euros y la dirección del local pequeño. Corregirlo al reclamar. La web es la única fuente con datos completos y correctos. **Email hallado ahí: elpirataranch@gmail.com — ⚠️ NO usar: posiblemente perdieron la contraseña; pendiente de confirmar con el dueño.** Se autodescriben como "rincón familiar en Homestead" (término añadido al SEO).
-- [ ] Reponer botones Uber Eats/DoorDash cuando reconecten las tablets.
+- [ ] Fotografía adicional de platos para completar tarjetas.
+- [x] Versión en inglés + hreflang — HECHO 21 jul 2026 (ver sección Bilingüe).
 
-## Fase 2: pedidos online con Clover (especificación cerrada, pendiente de arrancar)
-
-Arquitectura validada contra docs.clover.com (jul 2026). Spec completa en el documento de trabajo local `SPEC-pedidos-delivery.md` (carpeta OneDrive de El Pirata Ranch).
-
-Resumen: widget de pedidos propio en la web → Cloudflare Worker → Clover de cada local (**cada local tiene su propio merchant ID**, confirmado): menú sincronizado por Inventory API (cache KV), orden por Atomic Orders API + `print_event` explícito a cocina, pago con iframe/checkout alojado por Clover (PCI queda en Clover), webhooks + reconciliación.
-
-Pasos para arrancar:
-1. [ ] Ernesto: crear cuenta en el Global Developer Dashboard de Clover + merchant de prueba en sandbox.
-2. [ ] Prototipo end-to-end en sandbox: menú → orden → pago → impresión → webhooks.
-3. [ ] Dueño (por cada local): Merchant ID, tokens Ecommerce API (requiere 2FA), verificar que la sección "Ecommerce API Tokens" existe en su dashboard (⚠️ riesgo principal del proyecto: es un entitlement de Fiserv; si no aparece, pedirlo al rep temprano), inventario de dispositivos/impresoras, plan contratado y tarifa CNP real (~3.5% + $0.10).
-4. [ ] Producción con feature flag por local.
-
-## Fase 3: delivery propio + SMS (especificación cerrada)
-
-- Delivery con empleado propio; radio 10 millas validado por dirección en checkout (geocodificación puntual, **sin GPS ni tracking, decisión firme**).
-- Se implementa para ambos locales pero **lanza activo solo en el Ranch #1** (el #0 no tiene transporte aún); flag `delivery_enabled` por local.
-- Página móvil mínima para el repartidor (dos botones: "Salí" / "Entregado").
-- SMS transaccionales vía Twilio, **bilingües ES/EN a elección del cliente** en checkout: pedido recibido → listo/en camino → entregado + enlace de reseña de Google (motor de reseñas para SEO local). Requiere registro A2P 10DLC (trámite de días: arrancar temprano) y casilla de consentimiento.
+Las fases siguientes del proyecto (pedidos online y delivery) están especificadas y se gestionan en la documentación interna del estudio.
 
 ---
 
